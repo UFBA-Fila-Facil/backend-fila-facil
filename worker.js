@@ -188,9 +188,9 @@ async function sendFcmNotification(fcmToken, title, body, accessToken) {
         token: fcmToken,
         notification: { title, body },
         android: {
+          priority: 'HIGH',
           notification: {
             channel_id: 'fila_facil_queue',
-            priority: 'high',
           },
         },
         apns: {
