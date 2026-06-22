@@ -12,8 +12,8 @@ crons = ["* * * * *"]
 # Substitua os IDs abaixo pelos gerados no comando acima
 [[kv_namespaces]]
 binding    = "NOTIFICATION_KV"
-id         = "SUBSTITUA_PELO_KV_NAMESPACE_ID"
-preview_id = "SUBSTITUA_PELO_KV_PREVIEW_NAMESPACE_ID"
+id         = "d18b0eb33d9d46ab9f58afa49c8926a6"
+preview_id = "d18b0eb33d9d46ab9f58afa49c8926a6"
 
 # ─── Secrets (NÃO adicionar aqui — usar CLI) ───────────────────────────────
 # wrangler secret put SERVICE_ACCOUNT_EMAIL
