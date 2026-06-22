@@ -1,4 +1,4 @@
-name            = "fila-facil-notification-worker"
+name = "backend-fila-facil-notification-worker"
 main            = "worker.js"
 compatibility_date = "2024-11-01"
 
