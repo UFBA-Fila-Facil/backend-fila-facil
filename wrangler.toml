@@ -1,0 +1,23 @@
+name            = "fila-facil-notification-worker"
+main            = "worker.js"
+compatibility_date = "2024-11-01"
+
+# ─── Cron Trigger ──────────────────────────────────────────────────────────
+# Executa o worker a cada 1 minuto
+[triggers]
+crons = ["* * * * *"]
+
+# ─── KV Namespace ──────────────────────────────────────────────────────────
+# Crie com: wrangler kv namespace create NOTIFICATION_KV
+# Substitua os IDs abaixo pelos gerados no comando acima
+[[kv_namespaces]]
+binding    = "NOTIFICATION_KV"
+id         = "SUBSTITUA_PELO_KV_NAMESPACE_ID"
+preview_id = "SUBSTITUA_PELO_KV_PREVIEW_NAMESPACE_ID"
+
+# ─── Secrets (NÃO adicionar aqui — usar CLI) ───────────────────────────────
+# wrangler secret put SERVICE_ACCOUNT_EMAIL
+#   → cole o campo "client_email" do arquivo serviceAccountKey.json
+#
+# wrangler secret put SERVICE_ACCOUNT_PRIVATE_KEY
+#   → cole o campo "private_key" do arquivo serviceAccountKey.json
